@@ -1,3 +1,5 @@
+export const runtime = "edge"
+
 import Navigation from "@/components/sections/Navigation"
 import Hero from "@/components/sections/Hero"
 import TrustIndicators from "@/components/sections/TrustIndicators"

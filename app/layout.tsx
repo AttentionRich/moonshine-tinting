@@ -1,3 +1,5 @@
+export const runtime = "edge"
+
 import type { Metadata } from "next"
 import { Inter, Bebas_Neue } from "next/font/google"
 import "./globals.css"

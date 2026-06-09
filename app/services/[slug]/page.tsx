@@ -1,3 +1,5 @@
+export const runtime = "edge"
+
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import Link from "next/link"
@@ -6,10 +8,6 @@ import Footer from "@/components/sections/Footer"
 import CTABanner from "@/components/sections/CTABanner"
 import Badge from "@/components/ui/Badge"
 import { services, CONTACT } from "@/lib/constants"
-
-export function generateStaticParams() {
-  return services.map((s) => ({ slug: s.slug }))
-}
 
 export async function generateMetadata({
   params,

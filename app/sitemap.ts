@@ -1,3 +1,5 @@
+export const runtime = "edge"
+
 import type { MetadataRoute } from "next"
 import { services } from "@/lib/constants"
 
