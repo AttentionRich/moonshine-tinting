@@ -57,6 +57,9 @@ export const metadata: Metadata = {
       "Dublin's #1 window tinting, car valeting and PPF specialist. Same-week bookings available.",
     images: ["/og-image.jpg"],
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
   alternates: {
     canonical: "https://www.moonshine.ie",
   },
