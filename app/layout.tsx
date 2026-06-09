@@ -3,7 +3,7 @@ export const runtime = "edge"
 import type { Metadata } from "next"
 import { Inter, Bebas_Neue } from "next/font/google"
 import "./globals.css"
-import { CONTACT, HOURS } from "@/lib/constants"
+import { CONTACT } from "@/lib/constants"
 
 const inter = Inter({
   subsets: ["latin"],
