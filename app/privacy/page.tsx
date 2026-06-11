@@ -32,7 +32,7 @@ const sections = [
   {
     heading: "How we use your information",
     body: `We use the information you provide to respond to enquiries, schedule and carry out
-      bookings, process payments, and — where you've agreed — send you updates about our services.
+      bookings, process payments and, where you've agreed, send you updates about our services.
       We do not sell or rent your personal information to third parties.`,
   },
   {

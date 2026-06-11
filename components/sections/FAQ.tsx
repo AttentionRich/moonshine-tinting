@@ -43,7 +43,7 @@ export default function FAQ() {
               FAQ
             </h2>
             <p className="text-body text-sm leading-relaxed mb-6">
-              Have a question not answered here? We&apos;re happy to help — call or WhatsApp us directly.
+              Have a question not answered here? We&apos;re happy to help. Call or WhatsApp us directly.
             </p>
             <a
               href={CONTACT.phoneTel}

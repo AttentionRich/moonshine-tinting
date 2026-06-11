@@ -11,14 +11,14 @@ import { services } from "@/lib/constants"
 export const metadata: Metadata = {
   title: "Services | MoonShine Window Tinting & Car Valeting",
   description:
-    "Explore MoonShine's full range of services — ceramic window tinting, car valeting, vehicle detailing, PPF, wrapping and more across Dublin.",
+    "Explore MoonShine's full range of services: ceramic window tinting, car valeting, vehicle detailing, PPF, wrapping and more across Dublin.",
   alternates: {
     canonical: "https://www.moonshine.ie/services",
   },
   openGraph: {
     title: "Services | MoonShine Window Tinting & Car Valeting",
     description:
-      "Explore MoonShine's full range of services — ceramic window tinting, car valeting, vehicle detailing, PPF, wrapping and more across Dublin.",
+      "Explore MoonShine's full range of services: ceramic window tinting, car valeting, vehicle detailing, PPF, wrapping and more across Dublin.",
     url: "https://www.moonshine.ie/services",
   },
 }
@@ -39,8 +39,8 @@ export default function ServicesPage() {
               Our services
             </h1>
             <p className="text-body text-lg max-w-2xl mx-auto">
-              Premium tinting, detailing, protection and enhancement — every service backed by our
-              workmanship guarantee.
+              Premium tinting, detailing, protection and enhancement. Every service is backed by
+              our workmanship guarantee.
             </p>
           </div>
         </section>

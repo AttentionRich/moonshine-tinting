@@ -42,7 +42,7 @@ export default function AboutPage() {
             </h1>
             <p className="text-body text-lg max-w-2xl mx-auto">
               We&apos;re a Dublin-based team dedicated to making every vehicle we touch look its
-              absolute best — and stay that way.
+              absolute best, and stay that way.
             </p>
           </div>
         </section>
@@ -69,7 +69,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-body text-base leading-relaxed">
                 <p>
-                  MoonShine was founded with a simple goal — to bring genuinely premium window
+                  MoonShine was founded with a simple goal: to bring genuinely premium window
                   tinting, valeting and vehicle enhancement to Dublin, with the kind of attention
                   to detail you&apos;d expect from a luxury showroom.
                 </p>
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   We&apos;re fully insured, proud of our 4.9★ Google rating, and committed to a
-                  workmanship guarantee on everything we do — no shortcuts, no surprises.
+                  workmanship guarantee on everything we do. No shortcuts, no surprises.
                 </p>
               </div>
             </Reveal>

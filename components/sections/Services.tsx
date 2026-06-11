@@ -5,7 +5,6 @@ import { services } from "@/lib/constants"
 
 export default function Services() {
   const featured = services.filter((s) => s.featured)
-  const premium = services.filter((s) => !s.featured).slice(0, 3)
 
   return (
     <section
@@ -40,9 +39,9 @@ export default function Services() {
           </Link>
         </Reveal>
 
-        {/* Featured — swipeable carousel on mobile, 3-up grid on larger screens */}
+        {/* Featured services - swipeable carousel on mobile, 3-up grid on larger screens */}
         <div
-          className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4
+          className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4
             overflow-x-auto sm:overflow-visible snap-x snap-mandatory no-scrollbar -mx-6 px-6 sm:mx-0 sm:px-0"
           aria-label="Featured services"
         >
@@ -60,26 +59,6 @@ export default function Services() {
                 bullets={"bullets" in service ? (service as { bullets: readonly string[] }).bullets : undefined}
                 slug={service.slug}
                 variant="featured"
-              />
-            </Reveal>
-          ))}
-        </div>
-
-        {/* Premium wide-card row */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-4"
-          aria-label="Premium services"
-        >
-          {premium.map((service, i) => (
-            <Reveal key={service.slug} delay={i * 75}>
-              <ServiceCard
-                category={service.category}
-                name={service.name}
-                price={service.price}
-                description={service.description}
-                bullets={"bullets" in service ? (service as { bullets: readonly string[] }).bullets : undefined}
-                slug={service.slug}
-                variant="wide"
               />
             </Reveal>
           ))}

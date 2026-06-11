@@ -4,7 +4,7 @@ const steps = [
   {
     number: "01",
     heading: "Get a Quote",
-    body: "Contact us by phone or WhatsApp with your vehicle details and the service you need. We'll provide a transparent, no-obligation quote — usually within the hour.",
+    body: "Contact us by phone or WhatsApp with your vehicle details and the service you need. We'll provide a transparent, no-obligation quote, usually within the hour.",
   },
   {
     number: "02",

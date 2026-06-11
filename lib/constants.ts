@@ -40,14 +40,14 @@ export const beforeAfterPairs = [
     afterSrc: `${R2}/After-tint.jpg`,
     beforeAlt: "Car before window tinting",
     afterAlt: "Car after window tinting",
-    label: "Car Tint — Before & After",
+    label: "Car Tint: Before & After",
   },
   {
     beforeSrc: `${R2}/Before%20Tint%20House.jpg`,
     afterSrc: `${R2}/After%20Tint%20House.jpg`,
     beforeAlt: "House before window tinting",
     afterAlt: "House after window tinting",
-    label: "House Tint — Before & After",
+    label: "House Tint: Before & After",
   },
 ] as const
 
@@ -179,15 +179,15 @@ export const faqs = [
   },
   {
     question: "Is window tinting legal in Ireland?",
-    answer: "Yes — with conditions. Front side windows must allow at least 70% of light through. The rear windscreen and rear side windows have no legal VLT requirement on private cars. We only install legal films and will advise you on the correct shade before work begins.",
+    answer: "Yes, with conditions. Front side windows must allow at least 70% of light through. The rear windscreen and rear side windows have no legal VLT requirement on private cars. We only install legal films and will advise you on the correct shade before work begins.",
   },
   {
     question: "How do I care for a new tint?",
-    answer: "Avoid rolling down tinted windows for 3–5 days after installation to allow the adhesive to fully cure. Do not clean the inside of tinted windows for at least a week. When cleaning, use a soft cloth and ammonia-free cleaner — never abrasive materials or products containing ammonia.",
+    answer: "Avoid rolling down tinted windows for 3–5 days after installation to allow the adhesive to fully cure. Do not clean the inside of tinted windows for at least a week. When cleaning, use a soft cloth and ammonia-free cleaner, never abrasive materials or products containing ammonia.",
   },
   {
     question: "Do you offer a warranty?",
-    answer: "Yes. All window tinting installations come with a manufacturer-backed warranty covering bubbling, peeling, fading and delamination. Ceramic and premium films carry a lifetime warranty. We also guarantee our workmanship — if you are not fully satisfied, we will remedy it at no cost.",
+    answer: "Yes. All window tinting installations come with a manufacturer-backed warranty covering bubbling, peeling, fading and delamination. Ceramic and premium films carry a lifetime warranty. We also guarantee our workmanship, and if you are not fully satisfied, we will remedy it at no cost.",
   },
   {
     question: "Can you tint commercial vehicles?",

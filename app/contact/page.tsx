@@ -3,6 +3,7 @@ export const runtime = "edge"
 import type { Metadata } from "next"
 import Navigation from "@/components/sections/Navigation"
 import Footer from "@/components/sections/Footer"
+import BookingForm from "@/components/sections/BookingForm"
 import Reveal from "@/components/ui/Reveal"
 import { CONTACT, HOURS_LINES } from "@/lib/constants"
 
@@ -66,17 +67,22 @@ export default function ContactPage() {
       <main id="main-content">
         {/* Header */}
         <section className="bg-background py-16 lg:py-24">
-          <div className="max-w-7xl mx-auto px-6 text-center">
-            <p className="text-brand-blue-bright text-sm font-semibold uppercase tracking-widest mb-3">
-              Get in touch
-            </p>
-            <h1 className="heading-hero font-semibold tracking-tight text-white mb-4">
-              Contact MoonShine
-            </h1>
-            <p className="text-body text-lg max-w-2xl mx-auto">
-              Questions, quotes or ready to book? Reach us by phone, WhatsApp or email — we&apos;re
-              happy to help.
-            </p>
+          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="text-center lg:text-left">
+              <p className="text-brand-blue-bright text-sm font-semibold uppercase tracking-widest mb-3">
+                Get in touch
+              </p>
+              <h1 className="heading-hero font-semibold tracking-tight text-white mb-4">
+                Contact MoonShine
+              </h1>
+              <p className="text-body text-lg max-w-2xl mx-auto lg:mx-0">
+                Questions, quotes or ready to book? Reach us by phone, WhatsApp or email, or fill
+                in the form to send us your booking details on WhatsApp.
+              </p>
+            </div>
+            <Reveal delay={75}>
+              <BookingForm />
+            </Reveal>
           </div>
         </section>
 

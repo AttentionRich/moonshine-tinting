@@ -20,7 +20,7 @@ export default function ServiceAreas() {
             Serving Dublin &amp; surrounds
           </h2>
           <p className="text-body text-sm mt-4 max-w-xl mx-auto">
-            Based in Dublin, we serve customers across the greater Dublin area — from the city centre to the suburbs and beyond.
+            Based in Dublin, we serve customers across the greater Dublin area, from the city centre to the suburbs and beyond.
           </p>
         </Reveal>
 

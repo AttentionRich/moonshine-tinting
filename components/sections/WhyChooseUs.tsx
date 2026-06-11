@@ -17,7 +17,7 @@ const reasons = [
       </svg>
     ),
     heading: "Guaranteed Workmanship",
-    body: "Every installation is backed by our workmanship guarantee. If you're not completely satisfied with the quality of our work, we'll fix it at no additional cost — no questions asked.",
+    body: "Every installation is backed by our workmanship guarantee. If you're not completely satisfied with the quality of our work, we'll fix it at no additional cost, no questions asked.",
   },
   {
     icon: (

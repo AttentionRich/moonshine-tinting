@@ -90,7 +90,7 @@ export default function Navigation() {
         <Link
           href="/"
           className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded-full"
-          aria-label="MoonShine — home"
+          aria-label="MoonShine home"
         >
           <Image
             src="https://pub-714a75a88016476c930af6cc982140b7.r2.dev/website/Logo.png"
