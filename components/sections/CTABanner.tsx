@@ -3,7 +3,7 @@ import { CONTACT } from "@/lib/constants"
 export default function CTABanner() {
   return (
     <section
-      className="relative bg-background overflow-hidden py-20 lg:py-28"
+      className="relative bg-background-alt overflow-hidden py-24 lg:py-32"
       aria-labelledby="cta-heading"
     >
       {/* Brand blue glow */}
@@ -29,7 +29,7 @@ export default function CTABanner() {
         </p>
         <h2
           id="cta-heading"
-          className="font-display text-5xl sm:text-6xl lg:text-7xl text-white uppercase leading-none mb-6"
+          className="font-display heading-xl text-white uppercase mb-6"
         >
           Ready to Transform Your Vehicle?
         </h2>
@@ -42,7 +42,7 @@ export default function CTABanner() {
             href={CONTACT.phoneTel}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-3
               bg-brand-blue text-white text-sm font-semibold uppercase tracking-widest
-              px-8 py-4 hover:bg-brand-blue-dark transition-colors duration-200
+              px-8 py-4 hover:bg-brand-blue-dark hover:shadow-[0_0_20px_rgba(63,111,175,0.4)] transition-all duration-200
               focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-blue"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">

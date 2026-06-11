@@ -43,16 +43,16 @@ export default function Hero() {
               href="/contact"
               className="inline-flex items-center justify-center bg-brand-blue text-white
                 text-sm font-semibold uppercase tracking-widest px-8 py-3.5
-                hover:bg-brand-blue-dark transition-colors duration-200
+                hover:bg-brand-blue-dark hover:shadow-[0_0_20px_rgba(63,111,175,0.4)] transition-all duration-200
                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-blue"
             >
               Book Now
             </Link>
             <Link
               href="/gallery"
-              className="inline-flex items-center justify-center border border-white text-white
+              className="inline-flex items-center justify-center border border-brand-blue text-brand-blue
                 text-sm font-semibold uppercase tracking-widest px-8 py-3.5
-                hover:bg-white hover:text-background transition-colors duration-200
+                hover:bg-brand-blue hover:text-white transition-colors duration-200
                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               View Gallery

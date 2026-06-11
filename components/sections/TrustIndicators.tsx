@@ -41,7 +41,7 @@ const indicators = [
 export default function TrustIndicators() {
   return (
     <section
-      className="bg-surface border-t border-surface-border"
+      className="bg-background-alt"
       aria-label="Trust indicators"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">

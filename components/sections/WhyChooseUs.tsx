@@ -41,7 +41,7 @@ const reasons = [
 export default function WhyChooseUs() {
   return (
     <section
-      className="bg-background py-20 lg:py-28"
+      className="bg-background-alt py-24 lg:py-32"
       aria-labelledby="why-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +52,7 @@ export default function WhyChooseUs() {
           </p>
           <h2
             id="why-heading"
-            className="font-display text-5xl sm:text-6xl text-white uppercase"
+            className="font-display heading-xl text-white uppercase"
           >
             Why Choose Us
           </h2>
@@ -66,7 +66,8 @@ export default function WhyChooseUs() {
           {reasons.map((reason) => (
             <li
               key={reason.heading}
-              className="bg-surface border border-surface-border p-6 lg:p-8 group hover:border-brand-blue transition-colors duration-300"
+              className="bg-surface border border-surface-border shadow-[0_4px_24px_rgba(0,0,0,0.4)] p-6 lg:p-8 group
+                hover:border-brand-blue hover:-translate-y-1 transition-all duration-300"
             >
               <div className="text-brand-blue mb-5 group-hover:scale-110 transition-transform duration-300 w-fit">
                 {reason.icon}

@@ -2,10 +2,12 @@
 
 @theme {
   --color-brand-blue: #3F6FAF;
+  --color-brand-blue-bright: #5B8FD9;
   --color-brand-blue-dark: #2d5691;
-  --color-background: #1A1A1A;
-  --color-surface: #3A3A3A;
-  --color-surface-border: #4a4a4a;
+  --color-background: #0D0D0D;
+  --color-background-alt: #161616;
+  --color-surface: #1E1E1E;
+  --color-surface-border: rgba(255, 255, 255, 0.06);
   --color-muted: #EAEAEA;
   --color-whatsapp: #25D366;
 
@@ -14,14 +16,19 @@
 }
 
 html {
-  background-color: #1A1A1A;
+  background-color: #0D0D0D;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #1A1A1A;
+  background-color: #0D0D0D;
   color: #ffffff;
   font-family: var(--font-body);
+}
+
+.heading-xl {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.05;
 }
 
 @media (prefers-reduced-motion: reduce) {

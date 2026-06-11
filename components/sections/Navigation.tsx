@@ -96,7 +96,7 @@ export default function Navigation() {
             href="/contact"
             className="hidden sm:inline-flex items-center gap-2 bg-brand-blue text-white text-xs font-semibold
               uppercase tracking-widest px-5 py-2.5 rounded-full
-              hover:bg-brand-blue-dark transition-colors duration-200
+              hover:bg-brand-blue-dark hover:shadow-[0_0_20px_rgba(63,111,175,0.4)] transition-all duration-200
               focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
             Book Appointment
@@ -152,7 +152,7 @@ export default function Navigation() {
               href="/contact"
               onClick={() => setMenuOpen(false)}
               className="flex items-center justify-center bg-brand-blue text-white text-xs font-semibold
-                uppercase tracking-widest px-5 py-3 rounded-full hover:bg-brand-blue-dark transition-colors duration-200
+                uppercase tracking-widest px-5 py-3 rounded-full hover:bg-brand-blue-dark hover:shadow-[0_0_20px_rgba(63,111,175,0.4)] transition-all duration-200
                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
             >
               Book Appointment

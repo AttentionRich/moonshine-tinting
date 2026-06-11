@@ -8,7 +8,7 @@ export default function Services() {
 
   return (
     <section
-      className="bg-background py-20 lg:py-28"
+      className="bg-background py-24 lg:py-32"
       aria-labelledby="services-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,7 +20,7 @@ export default function Services() {
             </p>
             <h2
               id="services-heading"
-              className="font-display text-5xl sm:text-6xl text-white uppercase leading-none"
+              className="font-display heading-xl text-white uppercase"
             >
               Our Services
             </h2>

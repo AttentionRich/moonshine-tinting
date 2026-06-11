@@ -30,13 +30,16 @@ export default function Testimonials() {
 
   return (
     <section
-      className="bg-surface border-y border-surface-border py-20 lg:py-28"
+      className="bg-background-alt py-24 lg:py-32"
       aria-labelledby="reviews-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-12">
           <div>
+            <p className="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3">
+              What Our Customers Say
+            </p>
             <div className="flex items-center gap-3 mb-3">
               <div className="flex gap-0.5" aria-hidden="true">
                 {Array.from({ length: 5 }, (_, i) => (
@@ -50,7 +53,7 @@ export default function Testimonials() {
             </div>
             <h2
               id="reviews-heading"
-              className="font-display text-5xl sm:text-6xl text-white uppercase"
+              className="font-display heading-xl text-white uppercase"
             >
               Google Reviews
             </h2>
@@ -81,7 +84,7 @@ export default function Testimonials() {
           {reviews.map((review, index) => (
               <article
                 key={review.id}
-                className={`bg-background border border-surface-border p-6
+                className={`bg-surface border border-surface-border shadow-[0_4px_24px_rgba(0,0,0,0.4)] p-6
                   ${index !== current ? "hidden md:block" : "block"}`}
               >
                 <div className="flex items-start gap-4 mb-4">

@@ -3,7 +3,7 @@ import { serviceAreas } from "@/lib/constants"
 export default function ServiceAreas() {
   return (
     <section
-      className="bg-surface border-t border-surface-border py-20 lg:py-24"
+      className="bg-background py-24 lg:py-32"
       aria-labelledby="areas-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,7 +14,7 @@ export default function ServiceAreas() {
           </p>
           <h2
             id="areas-heading"
-            className="font-display text-5xl sm:text-6xl text-white uppercase"
+            className="font-display heading-xl text-white uppercase"
           >
             Serving Dublin &amp; Surrounds
           </h2>
@@ -32,7 +32,7 @@ export default function ServiceAreas() {
           {serviceAreas.map((area) => (
             <li key={area}>
               <span
-                className="inline-block border border-surface-border text-muted text-xs font-medium
+                className="inline-block bg-surface border border-surface-border text-muted text-xs font-medium
                   uppercase tracking-wider px-3 py-1.5 hover:border-brand-blue hover:text-brand-blue
                   transition-colors duration-200 cursor-default"
               >

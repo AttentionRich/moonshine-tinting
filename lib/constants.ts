@@ -7,7 +7,49 @@ export const CONTACT = {
   address: "Dublin, Ireland",
 } as const
 
-export const HOURS = "Mon–Sat 8AM–7PM · Sun 10AM–3PM" as const
+export const HOURS_LINES = ["Mon-Sat: 8:00 AM - 7:00 PM", "Sun: 10:00 AM - 3:00 PM"] as const
+
+export const R2 = "https://pub-714a75a88016476c930af6cc982140b7.r2.dev/website" as const
+
+export const galleryImages = [
+  {
+    src: `${R2}/GT86-rear.jpg`,
+    alt: "Toyota GT86 rear window tinting",
+  },
+  {
+    src: `${R2}/GT86-side.jpg`,
+    alt: "Toyota GT86 side profile with window tint",
+  },
+  {
+    src: `${R2}/S2000-close.jpg`,
+    alt: "Honda S2000 close-up detail shot",
+  },
+  {
+    src: `${R2}/S2000-front.jpg`,
+    alt: "Honda S2000 front with car wrap",
+  },
+  {
+    src: `${R2}/S2000-rear.jpg`,
+    alt: "Honda S2000 rear view",
+  },
+] as const
+
+export const beforeAfterPairs = [
+  {
+    beforeSrc: `${R2}/Before-tint.jpg`,
+    afterSrc: `${R2}/After-tint.jpg`,
+    beforeAlt: "Car before window tinting",
+    afterAlt: "Car after window tinting",
+    label: "Car Tint — Before & After",
+  },
+  {
+    beforeSrc: `${R2}/Before%20Tint%20House.jpg`,
+    afterSrc: `${R2}/After%20Tint%20House.jpg`,
+    beforeAlt: "House before window tinting",
+    afterAlt: "House after window tinting",
+    label: "House Tint — Before & After",
+  },
+] as const
 
 export const services = [
   {

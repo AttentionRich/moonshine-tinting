@@ -17,7 +17,7 @@ const faqJsonLd = {
 export default function FAQ() {
   return (
     <section
-      className="bg-background py-20 lg:py-28"
+      className="bg-background py-24 lg:py-32"
       aria-labelledby="faq-heading"
     >
       {/* FAQPage JSON-LD */}
@@ -37,7 +37,7 @@ export default function FAQ() {
             </p>
             <h2
               id="faq-heading"
-              className="font-display text-5xl sm:text-6xl text-white uppercase leading-none mb-6"
+              className="font-display heading-xl text-white uppercase mb-6"
             >
               FAQ
             </h2>

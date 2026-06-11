@@ -19,7 +19,7 @@ const steps = [
 export default function Process() {
   return (
     <section
-      className="bg-surface border-y border-surface-border py-20 lg:py-24"
+      className="bg-background py-24 lg:py-32"
       aria-labelledby="process-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,7 +30,7 @@ export default function Process() {
           </p>
           <h2
             id="process-heading"
-            className="font-display text-5xl sm:text-6xl text-white uppercase"
+            className="font-display heading-xl text-white uppercase"
           >
             How It Works
           </h2>
