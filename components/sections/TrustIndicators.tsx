@@ -44,9 +44,9 @@ export default function TrustIndicators() {
       className="bg-background-alt"
       aria-label="Trust indicators"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div className="max-w-7xl mx-auto px-6 py-12 lg:py-14">
         <ul
-          className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4"
           role="list"
           aria-label="Why choose MoonShine"
         >
@@ -57,10 +57,10 @@ export default function TrustIndicators() {
             >
               <div className="shrink-0">{item.icon}</div>
               <div>
-                <p className="font-display text-2xl text-white uppercase leading-none">
+                <p className="font-semibold text-xl text-white tracking-tight leading-none">
                   {item.value}
                 </p>
-                <p className="text-muted text-xs mt-1">{item.label}</p>
+                <p className="text-muted text-xs mt-1.5">{item.label}</p>
               </div>
             </li>
           ))}

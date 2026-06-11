@@ -1,8 +1,8 @@
 export const CONTACT = {
-  phone: "+353 1 234 5678",
-  phoneTel: "tel:+35312345678",
-  whatsapp: "+353 87 234 5678",
-  whatsappUrl: "https://wa.me/353872345678",
+  phone: "+353 87 970 4308",
+  phoneTel: "tel:+353879704308",
+  whatsapp: "+353 87 970 4308",
+  whatsappUrl: "https://wa.me/353879704308",
   email: "info@moonshine.ie",
   address: "Dublin, Ireland",
 } as const
@@ -146,27 +146,27 @@ export type Service = typeof services[number]
 export const reviews = [
   {
     id: 1,
-    name: "Ciarán M.",
-    initials: "CM",
-    timeAgo: "2 weeks ago",
+    name: "Shirley Leroy",
+    initials: "SL",
+    timeAgo: "a year ago",
     rating: 5,
-    text: "Absolutely flawless tint job on my BMW. Professional from start to finish. The team were incredibly attentive and the results exceeded my expectations. Will definitely be back.",
+    text: "Really delighted with Moonshine's work! The window tint on my new Suzuki Jimny looks incredible, it completely changed the aesthetic of my car. Great communication with the team, clean quick work, and good pricing. 100% recommend.",
   },
   {
     id: 2,
-    name: "Aoife R.",
-    initials: "AR",
-    timeAgo: "1 month ago",
+    name: "Jonathan White",
+    initials: "JW",
+    timeAgo: "11 months ago",
     rating: 5,
-    text: "Best detailing in Dublin. My car looks brand new — better than the day I bought it. The attention to detail is second to none. Highly recommend MoonShine to anyone.",
+    text: "Has to be a 10 out 10+ from me, had my Audi A6 window done and I have to say, it was a pleasure, great customer service and quality work. Thank you, will recommend.",
   },
   {
     id: 3,
-    name: "David K.",
-    initials: "DK",
-    timeAgo: "3 months ago",
+    name: "dan tinz",
+    initials: "DT",
+    timeAgo: "2 months ago",
     rating: 5,
-    text: "Very impressed with the PPF install. The team explained the whole process clearly and the finish is incredible. Highly recommend MoonShine for any vehicle protection work.",
+    text: "Great experience. Good customer service the car looks great highly recommen.",
   },
 ] as const
 

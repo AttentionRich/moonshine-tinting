@@ -29,10 +29,10 @@ export default function BeforeAfterSlider({
 
   return (
     <div>
-      <p className="text-brand-blue text-xs font-semibold uppercase tracking-widest mb-3">{label}</p>
+      <p className="text-brand-blue-bright text-xs font-semibold uppercase tracking-widest mb-3">{label}</p>
       <div
         ref={containerRef}
-        className="relative aspect-[16/9] overflow-hidden select-none cursor-col-resize"
+        className="relative aspect-[16/9] overflow-hidden rounded-2xl card-shadow border border-surface-border select-none cursor-col-resize"
         onMouseDown={(e) => { dragging.current = true; updatePos(e.clientX) }}
         onMouseMove={(e) => { if (dragging.current) updatePos(e.clientX) }}
         onMouseUp={() => { dragging.current = false }}
@@ -85,10 +85,10 @@ export default function BeforeAfterSlider({
         </div>
 
         {/* Corner labels */}
-        <span className="absolute top-3 left-3 z-10 bg-black/70 text-white text-xs font-semibold uppercase tracking-wider px-2 py-1 pointer-events-none">
+        <span className="absolute top-3 left-3 z-10 bg-black/70 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full pointer-events-none">
           Before
         </span>
-        <span className="absolute top-3 right-3 z-10 bg-brand-blue text-white text-xs font-semibold uppercase tracking-wider px-2 py-1 pointer-events-none">
+        <span className="absolute top-3 right-3 z-10 bg-brand-blue text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full pointer-events-none">
           After
         </span>
       </div>

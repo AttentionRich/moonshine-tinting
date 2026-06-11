@@ -1,3 +1,5 @@
+import Reveal from "@/components/ui/Reveal"
+
 const steps = [
   {
     number: "01",
@@ -19,22 +21,22 @@ const steps = [
 export default function Process() {
   return (
     <section
-      className="bg-background py-24 lg:py-32"
+      className="bg-background py-24 lg:py-28"
       aria-labelledby="process-heading"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-14">
-          <p className="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            Simple & Straightforward
+        <Reveal className="text-center mb-14">
+          <p className="text-brand-blue-bright text-sm font-semibold uppercase tracking-widest mb-3">
+            Simple &amp; straightforward
           </p>
           <h2
             id="process-heading"
-            className="font-display heading-xl text-white uppercase"
+            className="heading-xl font-semibold tracking-tight text-white"
           >
-            How It Works
+            How it works
           </h2>
-        </div>
+        </Reveal>
 
         {/* Steps */}
         <ol className="relative grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12" role="list">
@@ -45,7 +47,12 @@ export default function Process() {
           />
 
           {steps.map((step, index) => (
-            <li key={step.number} className="relative flex flex-col items-center text-center md:items-start md:text-left">
+            <Reveal
+              key={step.number}
+              as="li"
+              delay={index * 75}
+              className="relative flex flex-col items-center text-center md:items-start md:text-left"
+            >
               {/* Step connector line mobile */}
               {index < steps.length - 1 && (
                 <div
@@ -56,17 +63,17 @@ export default function Process() {
 
               {/* Number */}
               <div
-                className="relative z-10 font-display text-7xl leading-none text-brand-blue select-none mb-4"
+                className="relative z-10 text-6xl font-light leading-none text-brand-blue-bright select-none mb-4"
                 aria-hidden="true"
               >
                 {step.number}
               </div>
 
-              <h3 className="font-display text-3xl text-white uppercase mb-3">
+              <h3 className="font-semibold text-xl text-white tracking-tight mb-3">
                 {step.heading}
               </h3>
-              <p className="text-muted text-sm leading-relaxed">{step.body}</p>
-            </li>
+              <p className="text-body text-sm leading-relaxed">{step.body}</p>
+            </Reveal>
           ))}
         </ol>
       </div>

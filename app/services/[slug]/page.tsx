@@ -81,7 +81,7 @@ export default async function ServicePage({
 
         {/* Breadcrumb */}
         <div className="bg-surface border-b border-surface-border">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+          <div className="max-w-7xl mx-auto px-6 py-3">
             <nav aria-label="Breadcrumb">
               <ol className="flex items-center gap-2 text-xs text-muted" role="list">
                 <li>
@@ -107,15 +107,28 @@ export default async function ServicePage({
         </div>
 
         {/* Hero */}
-        <section className="bg-background border-b border-surface-border py-16 lg:py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl border-l-4 border-brand-blue pl-8">
+        <section className="bg-background py-16 lg:py-24">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-3xl">
               <Badge className="mb-4">{service.category}</Badge>
-              <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-white uppercase leading-none mb-4">
+              <h1 className="heading-hero font-semibold tracking-tight text-white mb-4">
                 {service.name}
               </h1>
-              <p className="text-brand-blue font-semibold text-xl mb-6">{service.price}</p>
-              <p className="text-muted text-lg leading-relaxed mb-8">{service.description}</p>
+
+              {service.price.startsWith("From ") ? (
+                <div className="mb-6">
+                  <p className="text-muted text-xs uppercase tracking-widest mb-1">From</p>
+                  <p className="font-light text-4xl text-brand-blue-bright tracking-tight leading-none">
+                    {service.price.slice(5)}
+                  </p>
+                </div>
+              ) : (
+                <p className="font-light text-4xl text-brand-blue-bright tracking-tight leading-none mb-6">
+                  {service.price}
+                </p>
+              )}
+
+              <p className="text-body text-lg leading-relaxed mb-8">{service.description}</p>
 
               {hasBullets && (
                 <ul className="mb-8 space-y-3" aria-label="Key benefits">
@@ -125,32 +138,32 @@ export default async function ServicePage({
                         className="mt-1.5 shrink-0 w-2 h-2 rounded-full bg-brand-blue"
                         aria-hidden="true"
                       />
-                      <span className="text-muted">{bullet}</span>
+                      <span className="text-body">{bullet}</span>
                     </li>
                   ))}
                 </ul>
               )}
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <a
                   href={CONTACT.phoneTel}
-                  className="inline-flex items-center gap-2 bg-brand-blue text-white
-                    text-sm font-semibold uppercase tracking-widest px-8 py-3.5
-                    hover:bg-brand-blue-dark transition-colors duration-200
-                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 min-h-[44px]
+                    bg-brand-blue text-white text-sm font-medium tracking-wide rounded-full
+                    px-8 py-3.5 hover:bg-brand-blue-dark hover:shadow-[0_0_24px_rgba(63,111,175,0.45)] hover:-translate-y-0.5 transition-all duration-300
+                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-blue"
                 >
-                  Get a Quote
+                  Get a quote
                 </a>
                 <a
                   href={CONTACT.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 border border-white text-white
-                    text-sm font-semibold uppercase tracking-widest px-8 py-3.5
-                    hover:bg-white hover:text-background transition-colors duration-200
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 min-h-[44px]
+                    border border-white/15 text-white text-sm font-medium tracking-wide rounded-full
+                    px-8 py-3.5 hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300
                     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
                 >
-                  WhatsApp Us
+                  WhatsApp us
                 </a>
               </div>
             </div>

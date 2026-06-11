@@ -1,20 +1,13 @@
 export const runtime = "edge"
 
 import type { Metadata } from "next"
-import { Inter, Bebas_Neue } from "next/font/google"
+import { Inter } from "next/font/google"
 import "./globals.css"
 import { CONTACT } from "@/lib/constants"
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  display: "swap",
-})
-
-const bebasNeue = Bebas_Neue({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-bebas-neue",
   display: "swap",
 })
 
@@ -139,7 +132,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${bebasNeue.variable} h-full`}
+      className={`${inter.variable} h-full`}
     >
       <head>
         <script
@@ -156,10 +149,11 @@ export default function RootLayout({
         <a
           href={CONTACT.phoneTel}
           aria-label="Call MoonShine"
-          className="sm:hidden fixed bottom-6 left-6 z-50 w-14 h-14 rounded-full
+          className="sm:hidden fixed left-6 z-50 w-14 h-14 rounded-full
+            bottom-[calc(1.5rem+env(safe-area-inset-bottom))]
             bg-brand-blue text-white flex items-center justify-center
-            shadow-lg shadow-brand-blue/30 hover:bg-brand-blue-dark
-            transition-colors duration-200
+            shadow-lg shadow-brand-blue/30 hover:bg-brand-blue-dark hover:scale-105
+            transition-all duration-300 ease-out
             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-blue"
         >
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
@@ -173,10 +167,11 @@ export default function RootLayout({
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat with MoonShine on WhatsApp"
-          className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full
+          className="fixed right-6 z-50 w-14 h-14 rounded-full
+            bottom-[calc(1.5rem+env(safe-area-inset-bottom))]
             bg-whatsapp text-white flex items-center justify-center
-            shadow-lg shadow-whatsapp/30 hover:opacity-90
-            transition-opacity duration-200
+            shadow-lg shadow-whatsapp/30 hover:opacity-90 hover:scale-105
+            transition-all duration-300 ease-out
             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-whatsapp"
         >
           <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

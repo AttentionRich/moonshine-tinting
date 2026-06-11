@@ -1,3 +1,5 @@
+import Reveal from "@/components/ui/Reveal"
+
 const reasons = [
   {
     icon: (
@@ -41,42 +43,44 @@ const reasons = [
 export default function WhyChooseUs() {
   return (
     <section
-      className="bg-background-alt py-24 lg:py-32"
+      className="bg-background-alt py-24 lg:py-28"
       aria-labelledby="why-heading"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-14">
-          <p className="text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            The MoonShine Difference
+        <Reveal className="text-center mb-14">
+          <p className="text-brand-blue-bright text-sm font-semibold uppercase tracking-widest mb-3">
+            The MoonShine difference
           </p>
           <h2
             id="why-heading"
-            className="font-display heading-xl text-white uppercase"
+            className="heading-xl font-semibold tracking-tight text-white"
           >
-            Why Choose Us
+            Why choose us
           </h2>
-        </div>
+        </Reveal>
 
         {/* Grid */}
         <ul
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
           role="list"
         >
-          {reasons.map((reason) => (
-            <li
+          {reasons.map((reason, i) => (
+            <Reveal
               key={reason.heading}
-              className="bg-surface border border-surface-border shadow-[0_4px_24px_rgba(0,0,0,0.4)] p-6 lg:p-8 group
-                hover:border-brand-blue hover:-translate-y-1 transition-all duration-300"
+              as="li"
+              delay={i * 75}
+              className="bg-surface border border-surface-border rounded-2xl card-shadow p-6 lg:p-8 group
+                hover:border-brand-blue/40 hover:-translate-y-1.5 transition-all duration-300"
             >
-              <div className="text-brand-blue mb-5 group-hover:scale-110 transition-transform duration-300 w-fit">
+              <div className="text-brand-blue-bright mb-5 group-hover:scale-110 transition-transform duration-300 w-fit">
                 {reason.icon}
               </div>
-              <h3 className="font-display text-2xl text-white uppercase mb-3">
+              <h3 className="font-semibold text-xl text-white tracking-tight mb-3">
                 {reason.heading}
               </h3>
-              <p className="text-muted text-sm leading-relaxed">{reason.body}</p>
-            </li>
+              <p className="text-body text-sm leading-relaxed">{reason.body}</p>
+            </Reveal>
           ))}
         </ul>
       </div>

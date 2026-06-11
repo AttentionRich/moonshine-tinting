@@ -6,7 +6,8 @@ interface BadgeProps {
 export default function Badge({ children, className = "" }: BadgeProps) {
   return (
     <span
-      className={`inline-block text-brand-blue text-xs font-bold uppercase tracking-widest ${className}`}
+      className={`inline-block bg-brand-blue/10 border border-brand-blue/20 text-brand-blue-bright
+        text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full ${className}`}
     >
       {children}
     </span>

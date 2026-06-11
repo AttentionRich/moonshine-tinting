@@ -1,11 +1,12 @@
 import Link from "next/link"
+import Reveal from "@/components/ui/Reveal"
 import { CONTACT, HOURS_LINES } from "@/lib/constants"
 
 const INSTAGRAM_URL = "https://www.instagram.com/moonshinetints/"
 const INSTAGRAM_HANDLE = "@moonshinetints"
 
 const iconWrapperClasses =
-  "shrink-0 w-11 h-11 flex items-center justify-center bg-surface border border-surface-border text-brand-blue"
+  "shrink-0 w-11 h-11 flex items-center justify-center bg-surface border border-surface-border text-brand-blue-bright rounded-2xl"
 
 const contactItems = [
   {
@@ -25,7 +26,7 @@ const contactItems = [
       </svg>
     ),
     content: (
-      <a href={CONTACT.phoneTel} className="text-white text-sm font-medium hover:text-brand-blue transition-colors duration-200">
+      <a href={CONTACT.phoneTel} className="text-white text-sm font-medium hover:text-brand-blue-bright transition-colors duration-300">
         {CONTACT.phone}
       </a>
     ),
@@ -38,7 +39,7 @@ const contactItems = [
       </svg>
     ),
     content: (
-      <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-white text-sm font-medium hover:text-brand-blue transition-colors duration-200">
+      <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-white text-sm font-medium hover:text-brand-blue-bright transition-colors duration-300">
         {INSTAGRAM_HANDLE}
       </a>
     ),
@@ -67,22 +68,22 @@ export default function Footer() {
     <footer className="bg-background" aria-label="Site footer">
       {/* Contact info row */}
       <div className="border-t border-surface-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+        <div className="max-w-7xl mx-auto px-6 py-12 lg:py-16">
+          <Reveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
             {contactItems.map((item) => (
               <div key={item.label} className="flex items-start gap-4">
                 <span className={iconWrapperClasses} aria-hidden="true">
                   {item.icon}
                 </span>
                 <div>
-                  <p className="text-brand-blue text-xs font-bold uppercase tracking-[0.1em] mb-1">
+                  <p className="text-brand-blue-bright text-xs font-semibold uppercase tracking-[0.1em] mb-1">
                     {item.label}
                   </p>
                   {item.content}
                 </div>
               </div>
             ))}
-          </div>
+          </Reveal>
         </div>
       </div>
 
@@ -103,15 +104,15 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="bg-surface border-t border-surface-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row
+        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row
           items-center justify-between gap-4 text-xs text-muted">
           <p>&copy; {year} MoonShine Window Tinting &amp; Car Valeting. All rights reserved.</p>
 
           <div className="flex items-center gap-6">
-            <Link href="/privacy" className="hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue">
+            <Link href="/privacy" className="hover:text-white transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded-full">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue">
+            <Link href="/terms" className="hover:text-white transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded-full">
               Terms of Service
             </Link>
           </div>
@@ -122,8 +123,8 @@ export default function Footer() {
               aria-label="MoonShine on Facebook"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 flex items-center justify-center border border-surface-border text-muted
-                hover:border-brand-blue hover:text-brand-blue transition-colors duration-200
+              className="w-10 h-10 flex items-center justify-center border border-surface-border text-muted rounded-full
+                hover:border-brand-blue hover:text-brand-blue-bright transition-colors duration-300
                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -135,8 +136,8 @@ export default function Footer() {
               aria-label="MoonShine on Instagram"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 flex items-center justify-center border border-surface-border text-muted
-                hover:border-brand-blue hover:text-brand-blue transition-colors duration-200
+              className="w-10 h-10 flex items-center justify-center border border-surface-border text-muted rounded-full
+                hover:border-brand-blue hover:text-brand-blue-bright transition-colors duration-300
                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -148,8 +149,8 @@ export default function Footer() {
               aria-label="WhatsApp MoonShine"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 flex items-center justify-center border border-surface-border text-muted
-                hover:border-whatsapp hover:text-whatsapp transition-colors duration-200
+              className="w-10 h-10 flex items-center justify-center border border-surface-border text-muted rounded-full
+                hover:border-whatsapp hover:text-whatsapp transition-colors duration-300
                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-whatsapp"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
